@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "2D7F/K2xlQdVr8+cu1hUl3b32X2PmbpyQXHzHdK7OBs=",
+  "Source": "WeatherRESTfulAPI",
+  "BasePath": "_content/WeatherRESTfulAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

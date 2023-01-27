@@ -1,0 +1,17 @@
+C:\Users\hp\Downloads\WeatherRESTfulAPI\Weather.Infrastructure\bin\Debug\net6.0\Weather.Infrastructure.deps.json
+C:\Users\hp\Downloads\WeatherRESTfulAPI\Weather.Infrastructure\bin\Debug\net6.0\Weather.Infrastructure.runtimeconfig.json
+C:\Users\hp\Downloads\WeatherRESTfulAPI\Weather.Infrastructure\bin\Debug\net6.0\Weather.Infrastructure.dll
+C:\Users\hp\Downloads\WeatherRESTfulAPI\Weather.Infrastructure\bin\Debug\net6.0\Weather.Infrastructure.pdb
+C:\Users\hp\Downloads\WeatherRESTfulAPI\Weather.Infrastructure\bin\Debug\net6.0\Weather.Domain.dll
+C:\Users\hp\Downloads\WeatherRESTfulAPI\Weather.Infrastructure\bin\Debug\net6.0\Weather.Domain.pdb
+C:\Users\hp\Downloads\WeatherRESTfulAPI\Weather.Infrastructure\obj\Debug\net6.0\Weather.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\hp\Downloads\WeatherRESTfulAPI\Weather.Infrastructure\obj\Debug\net6.0\Weather.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Downloads\WeatherRESTfulAPI\Weather.Infrastructure\obj\Debug\net6.0\Weather.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\hp\Downloads\WeatherRESTfulAPI\Weather.Infrastructure\obj\Debug\net6.0\Weather.Infrastructure.AssemblyInfo.cs
+C:\Users\hp\Downloads\WeatherRESTfulAPI\Weather.Infrastructure\obj\Debug\net6.0\Weather.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\hp\Downloads\WeatherRESTfulAPI\Weather.Infrastructure\obj\Debug\net6.0\Weather.Infrastructure.csproj.CopyComplete
+C:\Users\hp\Downloads\WeatherRESTfulAPI\Weather.Infrastructure\obj\Debug\net6.0\Weather.Infrastructure.dll
+C:\Users\hp\Downloads\WeatherRESTfulAPI\Weather.Infrastructure\obj\Debug\net6.0\refint\Weather.Infrastructure.dll
+C:\Users\hp\Downloads\WeatherRESTfulAPI\Weather.Infrastructure\obj\Debug\net6.0\Weather.Infrastructure.pdb
+C:\Users\hp\Downloads\WeatherRESTfulAPI\Weather.Infrastructure\obj\Debug\net6.0\Weather.Infrastructure.genruntimeconfig.cache
+C:\Users\hp\Downloads\WeatherRESTfulAPI\Weather.Infrastructure\obj\Debug\net6.0\ref\Weather.Infrastructure.dll
