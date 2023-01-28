@@ -75,7 +75,7 @@ namespace WeatherRESTfulAPI.Controllers
 		}
 
 		[HttpDelete]
-		public async Task<IActionResult> DeleteUSerById()
+		public async Task<IActionResult> DeleteUserById()
 		{
 			try
 			{
@@ -95,7 +95,7 @@ namespace WeatherRESTfulAPI.Controllers
 
 		[HttpDelete]
 		[Authorize(AuthenticationSchemes = "Bearer", Roles = "Admin")]
-		public async Task<IActionResult> AdminDeleteUSerById(string userId)
+		public async Task<IActionResult> AdminDeleteUserById(string userId)
 		{
 			try
 			{
