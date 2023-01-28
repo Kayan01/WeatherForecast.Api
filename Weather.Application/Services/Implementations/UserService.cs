@@ -12,10 +12,10 @@ namespace Weather.Application.Services.Implementations
 	{
 
 		private readonly UserManager<User> _userManager;
-		private readonly IGenericRepository<User> _userRepository;
+		private readonly IUserRepository _userRepository;
 		private readonly ITokenGenerator _tokenGenerator;
-		public UserService(UserManager<User> userManager, ITokenGenerator tokenGenerator, 
-			IGenericRepository<User>  userRepository)
+		public UserService(UserManager<User> userManager, ITokenGenerator tokenGenerator,
+			IUserRepository userRepository)
 		{
 			_userManager = userManager;
 			_tokenGenerator = tokenGenerator;
@@ -67,7 +67,7 @@ namespace Weather.Application.Services.Implementations
 
 		public async Task<Response<IEnumerable<UserResponseDto>>> GetAllUsersAsync()
 		{
-			var users = await _userRepository.GetAllRecordAsync();
+			var users = await _userRepository.GetAllUsersAsync();
 			var response = new List<UserResponseDto>();
 			foreach(var user in users)
 			{

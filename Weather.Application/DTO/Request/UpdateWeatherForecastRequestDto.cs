@@ -6,7 +6,6 @@ namespace Weather.Application.DTO.Request
 	{
 		[Required]
 		public Guid WeatherForecastId { get; set; }
-		public DateTime? Date { get; set; }
 
 		public string TemperatureC { get; set; }
 

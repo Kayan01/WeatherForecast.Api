@@ -17,6 +17,9 @@ namespace WeatherAPI.Configurations
       services.AddScoped<IWeatherForecastService, WeatherForecastService>();
       services.AddScoped<ITokenGenerator, TokenGenerator>();
       services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+      services.AddScoped<IUserRepository, UserRepository>();
+      services.AddScoped<IWeatherForecastRepository, WeatherForecastRepository>();
+      services.AddScoped<ILocationRepository, LocationRepository>();
       services.AddMvcCore();
       services.AddIdentity<User, IdentityRole>()
                .AddEntityFrameworkStores<AppDbContext>()

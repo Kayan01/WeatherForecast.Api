@@ -7,7 +7,7 @@ namespace Weather.Application.Services.Interfaces
 	{
 		Task<Response<string>> CreateWeatherForecastAsync(WeatherForecastRequestDto request);
 		Task<Response<WeatherForecastResponseDto>> DeleteWeatherForecastAsync(Guid locationId);
-		Task<Response<IEnumerable<WeatherForecastResponseDto>>> GetAllWeatherForecastsAsync();
+		Task<Response<IEnumerable<WeatherForecastResponseDto>>> GetAllWeatherForecastsAsync(Guid locationId);
 		Task<Response<WeatherForecastResponseDto>> GetWeatherForecastByIdAsync(Guid id);
 		Task<Response<WeatherForecastResponseDto>> UpdateWeatherForecastByIdAsync(UpdateWeatherForecastRequestDto request);
 	}

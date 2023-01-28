@@ -9,8 +9,8 @@ namespace Weather.Application.Services.Implementations
 {
 	public class LocationService : ILocationService
 	{
-		private readonly IGenericRepository<Location> _locationRepository;
-		public LocationService(IGenericRepository<Location> locationRepository)
+		private readonly ILocationRepository _locationRepository;
+		public LocationService(ILocationRepository locationRepository)
 		{
 			_locationRepository = locationRepository;
 		}
@@ -78,7 +78,7 @@ namespace Weather.Application.Services.Implementations
 		}
 		public async Task<Response<IEnumerable<LocationResponseDto>>> GetAllLocationsAsync()
 		{
-			var locations = await _locationRepository.GetAllRecordAsync();
+			var locations = await _locationRepository.GetAllLocationsAsync();
 			var response = new List<LocationResponseDto>();
 			foreach (var location in locations)
 			{
@@ -98,7 +98,7 @@ namespace Weather.Application.Services.Implementations
 			var location = _locationRepository.TableNoTracking.FirstOrDefault(location => location.Id == locationId);
 			if (location is null)
 			{
-				return Response<LocationResponseDto>.Fail($"User with id {locationId} does not exist", HttpStatusCode.NotFound);
+				return Response<LocationResponseDto>.Fail($"Location with id {locationId} does not exist", HttpStatusCode.NotFound);
 			}
 			location.IsDeleted = true;
 			location.DeletedAt = DateTime.Now;
@@ -115,7 +115,7 @@ namespace Weather.Application.Services.Implementations
 				};
 				return Response<LocationResponseDto>.Success("Deleted", response, HttpStatusCode.OK);
 			}
-			return Response<LocationResponseDto>.Fail("Failed to delete user");
+			return Response<LocationResponseDto>.Fail("Failed to delete location");
 		}
 	}
 }

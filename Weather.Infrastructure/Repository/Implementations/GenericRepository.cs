@@ -49,7 +49,7 @@ namespace Weather.Infrastructure.Repository.Implementations
 
 		public async Task<IEnumerable<T>> GetAllRecordAsync()
 		{
-			return await _dbSet.ToListAsync();
+			return await _dbSet.AsNoTracking().ToListAsync();
 		}
 
 
@@ -65,7 +65,7 @@ namespace Weather.Infrastructure.Repository.Implementations
 
 		public virtual async Task<bool> UpdateAsync(T entity)
 		{
-			_dbSet?.Update(entity);
+			_dbSet.Update(entity);
 			return await SaveAsync();
 		}
 

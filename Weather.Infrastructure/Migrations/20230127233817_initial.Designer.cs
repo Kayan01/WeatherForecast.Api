@@ -12,7 +12,7 @@ using Weather.Infrastructure.Data;
 namespace Weather.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230127213223_initial")]
+    [Migration("20230127233817_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -295,7 +295,7 @@ namespace Weather.Infrastructure.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<Guid?>("LocationId")
+                    b.Property<Guid>("LocationId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Summary")
@@ -372,7 +372,9 @@ namespace Weather.Infrastructure.Migrations
                 {
                     b.HasOne("Weather.Domain.Entities.Location", "Location")
                         .WithMany("Forecasts")
-                        .HasForeignKey("LocationId");
+                        .HasForeignKey("LocationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Location");
                 });

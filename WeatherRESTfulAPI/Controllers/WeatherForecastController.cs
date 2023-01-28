@@ -45,9 +45,10 @@ namespace WeatherRESTfulAPI.Controllers
 
 		}
 		[HttpGet]
-		public async Task<IActionResult> GetAllWeatherForecasts()
+		[Route("{locationId}")]
+		public async Task<IActionResult> GetAllWeatherForecasts(Guid locationId)
 		{
-			var response = await _weatherService.GetAllWeatherForecastsAsync();
+			var response = await _weatherService.GetAllWeatherForecastsAsync(locationId);
 			return StatusCode((int)response.ResponseCode, response);
 
 		}

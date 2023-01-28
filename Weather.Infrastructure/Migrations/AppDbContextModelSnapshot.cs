@@ -293,7 +293,7 @@ namespace Weather.Infrastructure.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<Guid?>("LocationId")
+                    b.Property<Guid>("LocationId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Summary")
@@ -370,7 +370,9 @@ namespace Weather.Infrastructure.Migrations
                 {
                     b.HasOne("Weather.Domain.Entities.Location", "Location")
                         .WithMany("Forecasts")
-                        .HasForeignKey("LocationId");
+                        .HasForeignKey("LocationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Location");
                 });

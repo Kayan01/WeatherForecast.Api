@@ -1,4 +1,6 @@
-﻿namespace Weather.Infrastructure.Repository.Interfaces
+﻿using Weather.Domain.Entities;
+
+namespace Weather.Infrastructure.Repository.Interfaces
 {
 	public interface IGenericRepository<T> where T : class
 	{

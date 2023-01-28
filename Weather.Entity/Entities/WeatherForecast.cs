@@ -2,6 +2,7 @@ namespace Weather.Domain.Entities
 {
 	public class WeatherForecast : BaseEntity
 	{
+		public Guid? LocationId { get; set; }
 		public DateTime? Date { get; set; }
 
 		public string? TemperatureC { get; set; }
